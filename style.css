@@ -13,10 +13,11 @@ body {
 
 .caixa-master {
     margin: auto;
-    width: 95%;
-    height: 95%;
+    max-width: 90vw;
+    min-height: 90vh;
     border-radius: 20px;
-    background: #0e0e0e;
+    background-image: url(./img/programador.jpg);
+    background-size: cover;
     box-shadow: 0 10px 30px #000000;
 }
 
@@ -25,37 +26,39 @@ body {
     margin-top: 50px;
     gap: 5px;
     justify-content: left;
+    min-height: 50px;
 
 }
 
 .buttons-header {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 20px;
-    background-color: #ff9800;
+    margin-bottom: 20px;
+    background-color: #e9e9e90a;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.425);
     padding: 5px;
     width: 100px;
     border-radius: 10px;
-    border: 2px solid transparent;
+    border: none;
     cursor: pointer;
-    font-weight: 500;
-    color: #000020;
-    box-shadow: 0 5px 10px #000020;
+    font-weight: 300;
+    color: #80ddff;
+    background-color: rgba(255, 255, 255, 0.077);
     font-size: 10px;
-    transition: .5s ease-out;
+    transition: .2s ease-out;
+    height: 25px;
 }
 
 .buttons-header:hover {
-    transition: .5s ease-in;
-    border: 2px solid white;
+    border: 1px solid #80ddff;
+    transition: .3s ease-in;
+    box-shadow: 0 0 10px turquoise;
+
+
 }
 
-.my-image {
-    max-width: 500px;
-    display: flex;
-    position: absolute;
-    top: 50px;
-    right: 0px;
-
+.titulo {
+    margin-top: 0px;
 }
 
 img {
@@ -63,57 +66,92 @@ img {
 }
 
 h1 {
-    font-weight: 900;
+    margin: 40px 0 0 20px;
+    font-weight: 100;
     color: white;
+    font-size: 20px;
 }
 
 span {
     color: #ff9800;
+    font-weight: 500;
+    font-size: 40px;
 }
 
+p {
+    font-weight: 100;
+    font-size: 15px;
+    color: #ffffff;
+    margin: 20px 0 0 20px;
+}
 
+.caixa-h3 {
+    display: flex;
+    border: 1px solid #80ddff;
+    border-radius: 10px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0;
 
+}
 
+h3 {
+    padding: 10px;
+    color: #ff9800;
+    font-weight: 300;
+}
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 .buttons-footer {
-    margin-left: 20px;
-    background-color: #ff9800;
+    margin-top: 10px;
+    background-color: #e9e9e90a;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.425);
     padding: 5px;
-    width: 100px;
+    width: 150px;
+    height: 25px;
     border-radius: 10px;
-    border: 2px solid transparent;
+    border: none;
     cursor: pointer;
-    font-weight: 500;
-    color: #000020;
-    box-shadow: 0 5px 10px #000020;
+    font-weight: 300;
+    color: #80ddff;
+    background-color: rgba(255, 255, 255, 0.077);
     font-size: 10px;
-    transition: .5s ease-out;
+    transition: .2s ease-out;
+
 }
 
 .buttons-footer:hover {
-    transition: .5s ease-in;
-    border: 2px solid white;
+    border: 1px solid #80ddff;
+    transition: .3s ease-in;
+    box-shadow: 0 0 10px turquoise;
+
 }
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 50px;
+    margin: 30px auto 10px auto;
+
+}
+
+a:hover{
+    cursor: pointer;
+  
+}
+
+img{
+    width: 40px;
+}
+
