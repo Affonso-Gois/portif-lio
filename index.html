@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portifólio Affonso Gois</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +14,17 @@
 </head>
 
 <body>
+   
+    <video autoplay muted loop>
+            <source src="./img/videoplayback.mp4" type="video/mp4">
+    </video>
 
     <div class="caixa-master">
         <div class="header">
-            <button class="buttons-header">SOBRE</button>
-            <button class="buttons-header">PROJETOS</button>
+            <button class="buttons-header" onclick="cliqueiNoBotao()">SOBRE</button>
+            <button class="buttons-header" onclick="cliqueiNoProjeto()">PROJETOS</button>
             <button class="buttons-header">COMPETÊNCIAS</button>
+            <button class="buttons-header">HOBBIES</button>
         </div>
 
         <!-- <div class="my-image">
@@ -30,21 +35,22 @@
             <h1>Hello, I'm <span>Affonso Gois</span> FullStack Developer</h1>
             <P>Sou um entusiasta apaixonado por tecnologia, sempre em busca de soluções inovadoras que tornem a vida
                 mais prática e eficiente.<br>
-                Valorizo a eficiência aliada à simplicidade, e estou sempre atento a novas tendências e ferramentas que possam melhorar a experiência do usuário. <br>
+                Valorizo a eficiência aliada à simplicidade, e estou sempre atento a novas tendências e ferramentas que
+                possam melhorar a experiência do usuário. <br>
                 Meu compromisso é transformar complexidade em praticidade,
                 oferecendo soluções tecnológicas que realmente façam a diferença no dia a dia das pessoas.</P>
         </div>
 
         <section class="footer">
-            
-        <div class="caixa-h3">
-            <h3>Lazer e Hobbies</h3>
-        </div>
-        
+
+            <div class="caixa-h3">
+                <h3>Lazer e Hobbies</h3>
+            </div>
+
             <button class="buttons-footer">Rappel Esportivo</button>
             <button class="buttons-footer">Games</button>
             <button class="buttons-footer">Voluntariado</button>
-           
+
         </section>
 
         <footer class="redes">
@@ -54,6 +60,68 @@
         </footer>
 
     </div>
+
+    <section class="sobre-mim" id="sobreMim">
+
+
+        <div class="caixa-sobre">
+            <h1 class="sobre">SOBRE</h1>
+        </div>
+
+        <div class="contorno-paragrafo" id="minhasecao">
+            <p class="paragrafo-sobre">
+            Sou um profissional em transição de carreira, migrando da área da saúde, como Técnico de Enfermagem, para o desenvolvimento fullstack. Com
+            uma trajetória consolidada em cuidar de pessoas e lidar com situações complexas, desenvolvi habilidades
+                essenciais como análise crítica, resolução de problemas e atenção aos detalhes, competências que agora
+                aplico no universo da tecnologia.
+                <br>
+
+                Minha jornada no desenvolvimento fullstack surgiu do desejo de explorar soluções inovadoras e da curiosidade
+                em compreender como sistemas funcionam, desde a interface com o usuário até a lógica por trás do backend.
+                Estou me aprofundando em tecnologias como HTML, CSS e JavaScript no front-end, e em linguagens como Node.js
+                e bancos de dados no back-end, buscando unir a experiência humanizada da saúde à eficiência tecnológica.
+                <br>
+
+                Acredito que minha experiência anterior me proporciona uma visão diferenciada na abordagem de problemas e na
+                comunicação eficaz com diferentes equipes. Estou entusiasmado com os desafios dessa nova fase e determinado
+                a evoluir constantemente, criando soluções que gerem impacto positivo e facilitem a vida das pessoas.
+            </p>
+        </div>
+
+    </section>
+
+    <div class="caixa-projetos">
+        <h1 class="textoprojetos">PROJETOS</h1>
+    </div>
+
+    <section>
+
+        <div class="meusprojetos" id="meusProjetos" > 
+            <iframe src="./img/capa portifolio.png" width="450" height="250" title="Projeto Mario">Projeto Portifólio</iframe>
+            <iframe src="./img/videoplayback.mp4" width="450" height="250" title="Projeto Mario">Projeto Mário</iframe>
+            <iframe src="./img/color_azul_marino_y_naranja.png" width="450" height="250" title="Projeto Mario">Projeto Overmontain</iframe>
+            
+        </div>
+
+    </section>
+
+    <div class="caixa-competencia">
+        <h1 class="textocompetencia">COMPETÊNCIAS</h1>
+    </div>
+
+
+    <section>
+
+
+
+    </section>
+
+
+
+
+
+
 </body>
+<script src="./scripts.js"></script>
 
 </html>

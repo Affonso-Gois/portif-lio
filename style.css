@@ -11,6 +11,18 @@ body {
 
 }
 
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0.5;
+   
+}
+
 .caixa-master {
     margin: auto;
     max-width: 90vw;
@@ -153,5 +165,81 @@ a:hover{
 
 img{
     width: 40px;
+}
+
+/* início de sobre */
+
+
+.caixa-sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.sobre{
+    color: #ff9800;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.contorno-paragrafo{
+    border: 1px solid #80ddff;
+    border-radius: 20px;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding: 20px; 
+    background-color: #263830; 
+    
+      
+}
+
+.paragrafo-sobre{
+    font-size: 20px;
+}
+
+/* edicao projetos */
+
+.meusprojetos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.caixa-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.textoprojetos{
+    color: #ff9800;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* edicao competencias */
+
+.caixa-competencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.textocompetencia{
+    color: #ff9800;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 30px;
 }
 
