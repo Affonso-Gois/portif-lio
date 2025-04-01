@@ -37,7 +37,8 @@ video{
     display: flex;
     margin-top: 50px;
     gap: 5px;
-    justify-content: left;
+    justify-content: right;
+    margin-right: 40px;
     min-height: 50px;
 
 }
@@ -70,7 +71,9 @@ video{
 }
 
 .titulo {
-    margin-top: 0px;
+    margin-top: 100px;
+    text-align: center;
+    
 }
 
 img {
@@ -185,19 +188,29 @@ img{
 }
 
 .contorno-paragrafo{
+    display: flex;
     border: 1px solid #80ddff;
     border-radius: 20px;
     width: 90%;
     text-align: center;
     margin: auto;
     padding: 20px; 
-    background-color: #263830; 
+    background-color: #141a17; 
     
       
 }
 
+.minhafoto{
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.552);
+}
+
 .paragrafo-sobre{
-    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 17px;
+    text-align: left;
 }
 
 /* edicao projetos */
@@ -241,5 +254,19 @@ img{
     font-weight: 500;
     font-size: 40px;
     margin-bottom: 30px;
+}
+/* posiçao seta */
+
+.seta{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    
+}
+.seta:hover{
+    width: 45px;
+    opacity: .8;
 }
 
