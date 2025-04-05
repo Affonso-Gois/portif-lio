@@ -11,7 +11,7 @@ body {
 
 }
 
-video{
+video {
     position: fixed;
     top: 0;
     left: 0;
@@ -20,7 +20,7 @@ video{
     z-index: -1;
     overflow: hidden;
     opacity: 0.5;
-   
+
 }
 
 .caixa-master {
@@ -33,13 +33,62 @@ video{
     box-shadow: 0 10px 30px #000000;
 }
 
+.input {
+    display: flex;
+    margin-left: 30px;
+    width: 400px;
+    gap: 20px;
+    position: absolute;
+    top: 90px;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid #80ddff;
+    padding: 5px;
+    width: 300px;
+    background-color:transparent;
+    outline: none;
+    color: #ffffff;
+    font-weight: 200;
+}
+input::placeholder {
+    text-align: center;
+    color:#ffffff;
+    font-weight: lighter;
+}
+
+input:hover {
+    transition: .3s ease-in;
+    box-shadow: 0 0 10px turquoise;
+
+}
+
+.input-button {
+    border-radius: 20px;
+    border: 1px solid #80ddff;
+    background: none;
+    padding: 10px;
+    height: 40px;
+}
+.input-button:hover {
+    transition: .3s ease-in;
+    box-shadow: 0 0 10px turquoise;
+}
+
+.image-input {
+    width: 20px;
+  
+}
+
 .header {
     display: flex;
     margin-top: 50px;
     gap: 5px;
     justify-content: right;
-    margin-right: 40px;
     min-height: 50px;
+    width: 600px;
+    margin-left: 750px;
 
 }
 
@@ -73,7 +122,7 @@ video{
 .titulo {
     margin-top: 100px;
     text-align: center;
-    
+
 }
 
 img {
@@ -152,7 +201,7 @@ h3 {
 
 }
 
-.redes{
+.redes {
     display: flex;
     justify-content: space-between;
     width: 400px;
@@ -161,52 +210,52 @@ h3 {
 
 }
 
-a:hover{
+a:hover {
     cursor: pointer;
-  
+
 }
 
-img{
+img {
     width: 40px;
 }
 
 /* início de sobre */
 
 
-.caixa-sobre{
+.caixa-sobre {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
-.sobre{
+.sobre {
     color: #ff9800;
     font-weight: 500;
     font-size: 40px;
     margin-bottom: 30px;
 }
 
-.contorno-paragrafo{
+.contorno-paragrafo {
     display: flex;
     border: 1px solid #80ddff;
     border-radius: 20px;
     width: 90%;
     text-align: center;
     margin: auto;
-    padding: 20px; 
-    background-color: #141a17; 
-    
-      
+    padding: 20px;
+    background-color: #141a17;
+
+
 }
 
-.minhafoto{
+.minhafoto {
     width: 300px;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.552);
 }
 
-.paragrafo-sobre{
+.paragrafo-sobre {
     margin-top: auto;
     margin-bottom: auto;
     font-size: 17px;
@@ -215,7 +264,7 @@ img{
 
 /* edicao projetos */
 
-.meusprojetos{
+.meusprojetos {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 20px;
@@ -226,14 +275,14 @@ img{
 
 }
 
-.caixa-projetos{
+.caixa-projetos {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
-.textoprojetos{
+.textoprojetos {
     color: #ff9800;
     font-weight: 500;
     font-size: 40px;
@@ -242,31 +291,65 @@ img{
 
 /* edicao competencias */
 
-.caixa-competencia{
+.caixa-competencia {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
-.textocompetencia{
+.textocompetencia {
     color: #ff9800;
     font-weight: 500;
     font-size: 40px;
     margin-bottom: 30px;
 }
+
+#minhascompetencias {
+    display: flex;
+    border: 1px solid #80ddff;
+    border-radius: 20px;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    background-color: #141a17;
+    justify-content: space-around;
+
+}
+
+.js {
+    width: 53px;
+}
+
+.tecnologias {
+    width: 400px;
+    color: white;
+    font-weight: lighter;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
 /* posiçao seta */
 
-.seta{
+.seta {
     display: flex;
     position: fixed;
     bottom: 20px;
     right: 20px;
     cursor: pointer;
-    
+
 }
-.seta:hover{
+
+.seta:hover {
     width: 45px;
     opacity: .8;
 }
 
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
