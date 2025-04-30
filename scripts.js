@@ -48,26 +48,11 @@ function scrollToWord() {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' }); //rola a pagina para o elemento
             return; //para a busca
         }
-        
-        
-    } 
 
-}
+        
 
-function highlightWord() {
-    const input = document.getElementById("searchInput").value.trim();
-    const paragraph = document.body.querySelectorAll('*');
-    const regex = new RegExp(`(${input})`, 'gi');
-    
-    if (input !== '') {
-        paragraph.innerHTML = paragraph.textContent.replace(regex, '<span class="highlight">$1</span>');
+
     }
+
+  
 }
-
-
-const botao = document.getElementById("meuBotao");
-
-botao.addEventListener("click", highlightWord())
-
-
-
